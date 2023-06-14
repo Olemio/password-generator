@@ -2,10 +2,13 @@ body {
     margin: 0;
     background: #1F2937;
     color: white;
+    margin: 115px 52px;
 }
 
 h1 {
-    margin: 115px 52px;
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    margin: 0;
 }
 
 span {
@@ -15,6 +18,9 @@ span {
 h3 {
     color: #D5D4D8;
     font-family: 'Inter';
+    font-weight: 200;
+    font-size: 20px;
+    margin: 10px 0 0;
 }
 
 button {
@@ -23,21 +29,31 @@ button {
     border: none;
     border-radius: 6px;
     padding: 9px 16px;
+    margin: 51px 0 0;
 }
 
 #line-el {
     background: #2F3E53;
     width: 446px;
     height: 0.5px;
+    margin: 35px 0 35px;
 }
 
 #passwords {
     display: flex;
+    justify-content: space-between;
+    width: 446px;
 }
 
 #passwords p {
-    width: 211px;
-    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 211px;
+    min-height: 39px;
     background: #273549;
     border-radius: 6px;
+    margin: 0;
+    font-family: 'Inter';
+    color: #55F991;
 }
