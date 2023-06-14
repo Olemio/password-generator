@@ -12,9 +12,15 @@
 <body>
     <h1>Generate a <br> <span>random password</span></h1>
     <h3>Never use an insecure password again.</h3>
-    <button onClick="buttonPressed()">Generate passwords</button>
+
+    <div id="password-input">
+        <button onClick="buttonPressed()">Generate passwords</button>
+        <input id="custom-length-el" placeholder="Custom length" />
+    </div>
+
     <div id="line-el"></div>
-    <div id="passwords">
+
+    <div id="password-output">
         <p id="password1-el"></p>
         <p id="password2-el"></p>    
     </div>

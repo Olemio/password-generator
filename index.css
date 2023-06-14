@@ -23,13 +23,25 @@ h3 {
     margin: 10px 0 0;
 }
 
-button {
+::placeholder {
+    color: white;
+}
+
+#password-input {
+    display: flex;
+    justify-content: space-between;
+    width: 446px;
+}
+
+#password-input button, #password-input input {
     background: #10B981;
+    text-align: center;
     color: #fff;
     border: none;
     border-radius: 6px;
-    padding: 9px 16px;
     margin: 51px 0 0;
+    width: 211px;
+    height: 39px;
 }
 
 #line-el {
@@ -39,18 +51,18 @@ button {
     margin: 35px 0 35px;
 }
 
-#passwords {
+#password-output {
     display: flex;
     justify-content: space-between;
     width: 446px;
 }
 
-#passwords p {
+#password-output p {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 211px;
-    min-height: 39px;
+    width: 211px;
+    height: 39px;
     background: #273549;
     border-radius: 6px;
     margin: 0;

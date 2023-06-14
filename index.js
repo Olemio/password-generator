@@ -3,7 +3,9 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let password1El = document.getElementById("password1-el")
 let password2El = document.getElementById("password2-el")
+let passwordLength = 15
 
+let customLengthEl = document.getElementById("custom-length-el")
 
 function buttonPressed() {
     password1El.textContent = generatePasswords()
@@ -12,10 +14,12 @@ function buttonPressed() {
 
 function generatePasswords() {
     let passwordArray = ""
-    for (i = 0; i < 15; i++){
+    if (customLengthEl.value) {
+        passwordLength = customLengthEl.value
+    }
+    for (i = 0; i < passwordLength; i++){
         let randomIndex = Math.floor( Math.random() * characters.length)
         passwordArray += (characters[randomIndex])
     }
     return passwordArray
 }
-
